@@ -27,10 +27,6 @@ body {
     width: 100%
 }
 
-.col-md-3 {
-    width: 16%
-}
-
 .text-vertical-center h1 {
     font-size: 4.5em;
     font-weight: 700;
@@ -40,6 +36,10 @@ body {
 
 .services-container {
     width: 100%;
+}
+
+.bg-primary {
+    background-color: dimgray;
 }
 
 
