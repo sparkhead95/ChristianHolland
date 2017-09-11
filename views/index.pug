@@ -196,17 +196,22 @@ block content
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
     // Plugin JavaScript
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
     // Custom scripts for this template
     script(src='javascripts/stylish-portfolio.js')
     script(src='lib/typed.js')
     script.
-      var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        typeSpeed: 30
-      });
+
       //jQuery is required to run this code
         $( document ).ready(function() {
-
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                typeSpeed: 30
+            });
+            window.sr = ScrollReveal({ reset: true });
+            sr.reveal('#about', { duration: 500 });
+            
+            sr.reveal('.services-container', { duration: 900 });
             scaleVideoContainer();
 
             initBannerVideoSize('.video-container .poster img');
