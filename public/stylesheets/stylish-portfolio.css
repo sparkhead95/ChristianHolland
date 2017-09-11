@@ -76,7 +76,6 @@ body {
     position: absolute;
 }
 .video-container .filter {
-    z-index: 100;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -212,6 +211,7 @@ hr.small {
     z-index: 3;
     top: 0;
     right: 0;
+    -webkit-transform: translate3d(0,0,3);
 }
 
 #sidebar-wrapper.active {
@@ -245,7 +245,6 @@ hr.small {
     top: 0px;
     color: white;
     z-index: 2;
-    -webkit-transform: translate3d(0,0,0);
 }
 
 
