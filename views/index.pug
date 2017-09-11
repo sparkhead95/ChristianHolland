@@ -24,7 +24,11 @@ block content
     header#top.header
       .text-vertical-center
         h1 Christian Holland
-        h3 Computer Science graduate with experience in developing AI technologies, web applications and computer games.
+        div#typed-strings
+          p
+            | Computer Science graduate with experience in developing AI technologies, web applications and computer games.
+        span#typed
+        br
         br
         a.btn.btn-dark.btn-lg.js-scroll-trigger(href='#about') Find Out More
     // About
@@ -32,7 +36,7 @@ block content
       .container.text-center
         h2 About me
         p.lead
-          | This is where you will find out detailed, but not extensive or tedious, information about myself.
+          | This is where you will find out detailed, but not extensive nor tedious, information about myself.
     // Services
     section#services.services.bg-primary.text-white
       .services-container
@@ -182,3 +186,11 @@ block content
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
     // Custom scripts for this template
     script(src='javascripts/stylish-portfolio.js')
+    script(src='lib/typed.js')
+    script.
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 30
+      });
+
+          
