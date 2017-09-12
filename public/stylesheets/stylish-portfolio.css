@@ -145,8 +145,10 @@ hr.small {
 /* Side Menu */
 
 #sidebar-wrapper {
-    position: fixed;
+    display: none;
+    position: absolute;
     z-index: 1000;
+    top: 0;
     right: 0;
     overflow-y: auto;
     width: 250px;
