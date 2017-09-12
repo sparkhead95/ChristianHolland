@@ -1,7 +1,8 @@
 extends layout
 
 block content
-    // Background
+
+    // Coverr Background
     .homepage-hero-module
       .video-container
         .filter
@@ -32,6 +33,8 @@ block content
           a.js-scroll-trigger(href='#portfolio') Portfolio
         li
           a.js-scroll-trigger(href='#contact', onclick='$(') Contact
+          
+          
     // Header
     header#top.header
       .text-vertical-center
@@ -44,12 +47,16 @@ block content
         br
         br
         a#FindMoreBtn.button.button-border-primary.button-rounded.js-scroll-trigger(href='#about') Find Out More
+        
+        
     // About
     section#about.about
       .container.text-center
         h2 About me
         p.lead
           | This is where you will find out detailed, but not extensive nor tedious, information about myself.
+          
+          
     // Services
     section#services.services.bg-primary.text-white
       .services-container
@@ -113,10 +120,12 @@ block content
                     strong Music Production
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   a.btn.btn-light(href='http://bit.ly/2hsfx9V') Learn More
+                  
     // Callout
     aside.callout
       .text-vertical-center
         h1 Vertically Centered Text
+        
     // Portfolio
     section#portfolio.portfolio
       .container
@@ -141,23 +150,22 @@ block content
                 .portfolio-item
                   a(href='#')
                     img.img-portfolio.img-fluid(src='img/portfolio-4.jpg')
-            // /.row (nested)
             a.btn.btn-dark(href='#') View More Items
-          // /.col-lg-10
-        // /.row
-      // /.container
+            
     // Call to Action
     aside.call-to-action.bg-primary.text-white
       .container.text-center
         h3 The buttons below are impossible to resist.
         a.btn.btn-lg.btn-light(href='#') Click Me!
         a.btn.btn-lg.btn-dark(href='#') Look at Me!
+        
     // Map
     section#contact.map
       iframe(width='100%', height='100%', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed')
       br
       small
         a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A')
+        
     // Footer
     footer
       .container
@@ -191,6 +199,7 @@ block content
             p.text-muted Copyright © Your Website 2017
       a#to-top.btn.btn-dark.btn-lg.js-scroll-trigger(href='#top')
         i.fa.fa-chevron-up.fa-fw.fa-1x
+        
     // Bootstrap core JavaScript
     script(src='https://code.jquery.com/jquery-3.2.1.min.js')
     script(src='vendor/popper/popper.min.js')
@@ -206,16 +215,21 @@ block content
 
       //jQuery is required to run this code
         $( document ).ready(function() {
+            
+            // Typewriter effects
             var typed = new Typed('#typed', {
                 stringsElement: '#typed-strings',
                 typeSpeed: 30
             });
+            
+            // Scroll reveal
             window.sr = ScrollReveal({ reset: true });
             sr.reveal('#FindMoreBtn', { duration: 200 });
             sr.reveal('#about', { duration: 500 });
             sr.reveal('.services-container', { duration: 900 });
+            
+            // Coverr image 
             scaleVideoContainer();
-
             initBannerVideoSize('.video-container .poster img');
             initBannerVideoSize('.video-container .filter');
             initBannerVideoSize('.video-container video');
@@ -254,8 +268,6 @@ block content
             windowHeight = $(window).height() + 5,
             videoWidth,
             videoHeight;
-
-            // console.log(windowHeight);
 
             $(element).each(function(){
                 var videoAspectRatio = $(this).data('height')/$(this).data('width');
