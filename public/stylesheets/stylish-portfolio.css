@@ -145,8 +145,7 @@ hr.small {
 /* Side Menu */
 
 #sidebar-wrapper {
-    display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     top: 0;
     right: 0;
@@ -332,14 +331,14 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding-top: 50px;
 }
 
 #to-top {
     font-size: 1em;
     position: fixed;
-    right: 5px;
-    bottom: 5px;
+    right: 0px;
+    bottom: 0px;
     display: none;
     padding: 15px 20px;
 }
