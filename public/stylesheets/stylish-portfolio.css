@@ -211,7 +211,6 @@ hr.small {
     z-index: 3;
     top: 0;
     right: 0;
-    -webkit-transform: translate3d(0,0,3);
 }
 
 #sidebar-wrapper.active {
