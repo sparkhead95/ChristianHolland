@@ -52,6 +52,10 @@ body {
     margin-bottom: 10px;
 }
 
+#bgPic {
+    display: none;
+}
+
 .homepage-hero-module {
     border-right: none;
     border-left: none;
