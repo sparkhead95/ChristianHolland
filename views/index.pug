@@ -64,7 +64,7 @@ block content
             hr.small
             .row
               .col-md-4
-                .service-item
+                .service-item#si1
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-cloud.fa-stack-1x.text-primary
@@ -73,7 +73,7 @@ block content
                   p During my Employment at IBM, I achieved a certification acknowledging that I am an IBM Certified Specialist Engineer.
                   a.btn.btn-light(href='https://ibm.co/2nNygzu') Learn More
               .col-md-4
-                .service-item
+                .service-item#si2
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-compass.fa-stack-1x.text-primary
@@ -82,7 +82,7 @@ block content
                   p WhoSeddit is my final year dissertation project written in Node.js, showing the popularity and spread of rumours across the Twitter platform, using their API.
                   a.btn.btn-light(href='http://bit.ly/2nEUNya') Learn More
               .col-md-4
-                .service-item
+                .service-item#si3
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-flask.fa-stack-1x.text-primary
@@ -92,7 +92,7 @@ block content
                   a.btn.btn-light(href='http://bit.ly/2hBXC3Q') Learn More
             .row
               .col-md-4
-                .service-item
+                .service-item#si4
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-shield.fa-stack-1x.text-primary
@@ -101,7 +101,7 @@ block content
                   p Prison Break is a Dying Light custom campaign that a friend and I worked on when the <a href="https://steamdb.info/app/350570/">developers tools</a> first came out. It was done originally just to pass the time, but it blew up in popularity so we decided to finish it.
                   a.btn.btn-light(href='http://bit.ly/2gXaf5q') Learn More
               .col-md-4
-                .service-item
+                .service-item#si5
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-shield.fa-stack-1x.text-primary
@@ -111,7 +111,7 @@ block content
                   a.btn.btn-light(href='http://bit.ly/2gxKJTc') Learn More
                   a.btn.btn-light(href='http://bit.ly/2gxKQOC') Learn More
               .col-md-4
-                .service-item
+                .service-item#si6
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-shield.fa-stack-1x.text-primary
@@ -173,10 +173,16 @@ block content
             // Scroll reveal
             window.sr = ScrollReveal({ reset: true });
             sr.reveal('#FindMoreBtn', { duration: 700 });
-            sr.reveal('#about', { duration: 500 });
-            sr.reveal('.services-container', { duration: 700 });
+            sr.reveal('#about', { duration: 300 });
+            sr.reveal('.services-container', { duration: 100 });
             sr.reveal('.fa-facebook', { duration: 300 });
-            sr.reveal('.fa-linkedin', { duration: 500 });
+            sr.reveal('.fa-linkedin', { duration: 600 });
+            sr.reveal('#si1', { duration: 500 });
+            sr.reveal('#si2', { duration: 700 });
+            sr.reveal('#si3', { duration: 900 });
+            sr.reveal('#si4', { duration: 1100 });
+            sr.reveal('#si5', { duration: 1300 });
+            sr.reveal('#si6', { duration: 1500 });
             
             // Coverr image 
             scaleVideoContainer();
