@@ -23,8 +23,8 @@ body {
     vertical-align: middle;
 }
 
-.col-lg-10 {
-    width: 100%
+.col-md-4 {
+    padding-right: 2%
 }
 
 .text-vertical-center h1 {
