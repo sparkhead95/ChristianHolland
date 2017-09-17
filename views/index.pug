@@ -52,7 +52,7 @@ block content
       .container.text-center
         h2 About me
         p.lead
-          | This is where you will find out detailed, but not extensive nor tedious, information about myself.
+          | I am a young Computer Science major developing Artificial Intelligence technologies during the day and web applications and computer games at night. If you check out my <a class="js-scroll-trigger" href="#services">portfolio</a>, you'll find I have a wide range of skills, along with something to show for each of one. Have a look around - if you like what you see and want to find out more, please drop me an <a class="js-scroll-trigger" href="#contact">email</a>.
           
           
     // Services
@@ -98,7 +98,7 @@ block content
                     i.fa.fa-shield.fa-stack-1x.text-primary
                   h4
                     strong Prison Break
-                  p Prison Break is a Dying Light custom campaign that a friend and I worked on when the <a href="https://steamdb.info/app/350570/">developers tools</a> first came out. It was done originally just to pass the time, but it blew up in popularity so we decided to finish it.
+                  p Prison Break is a Dying Light custom campaign that a friend and I worked on when the <a id="servLink" href="https://steamdb.info/app/350570/">developers tools</a> first came out. It was done originally just to pass the time, but it blew up in popularity so we decided to finish it.
                   a.btn.btn-light(href='http://bit.ly/2gXaf5q') Learn More
               .col-md-4
                 .service-item#si5
@@ -169,6 +169,8 @@ block content
             if (isMobile.matches) {
                 $('#bgPic').css('display', 'inline');
                 $('#bgVid').css('display', 'none');
+                $('.col-md-4').css('padding-left', '10%');
+                $('.col-md-4').css('padding-right', '10%');
             }
             
             // Typewriter effects

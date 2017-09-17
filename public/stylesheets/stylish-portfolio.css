@@ -23,8 +23,54 @@ body {
     vertical-align: middle;
 }
 
+#about a {
+    display: inline;
+    text-decoration: underline;
+    color: black;
+}
+
+#servLink {
+    display: inline;
+    text-decoration: underline;
+    color: white;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.box {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    border: 2px solid #0b7;
+    -webkit-transition: 0.5s;
+    display: inline-block;
+}
+
+.box:hover {
+    border: 2px solid rgba(0, 160, 80, 0);
+    color: #FFF;
+}
+
+.box::before,
+.box::after {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
+}
+
 .col-md-4 {
-    padding-right: 2%
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .col-lg-10 {
@@ -47,9 +93,10 @@ body {
 }
 
 #typed {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 #bgPic {
@@ -61,14 +108,17 @@ body {
     border-left: none;
     position: relative;
 }
+
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
 }
+
 .no-video .video-container .poster,
 .touch .video-container .poster {
     display: block !important;
 }
+
 .video-container {
     position: absolute;
     bottom: 0%;
@@ -78,21 +128,25 @@ body {
     overflow: hidden;
     background: #000;
 }
+
 .video-container .poster img {
     width: 100%;
     bottom: 0;
     position: absolute;
 }
+
 .video-container .filter {
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
+
 .video-container video {
     position: absolute;
     z-index: 0;
     bottom: 0;
 }
+
 .video-container video.fillWidth {
     width: 100%;
 }
@@ -108,7 +162,7 @@ body {
     -ms-animation: blink 0.7s infinite;
     -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    display:inline;
+    display: inline;
 }
 
 
@@ -271,6 +325,7 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 
