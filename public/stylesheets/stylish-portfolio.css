@@ -39,6 +39,11 @@ h1 {
     font-family: "Courier New", Courier, monospace;
 }
 
+#mainSubtitle {
+    font-family: "Courier New", Courier, monospace;
+    font-size:25px;
+}
+
 .box {
     height: 100%;
     width: 70%;
