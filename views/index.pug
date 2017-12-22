@@ -2,18 +2,6 @@ extends layout
 
 block content
 
-    // Coverr Background
-    .homepage-hero-module
-      .video-container
-        .filter
-        video#bgVid.fillWidth(autoplay='true', loop='')
-          source(src='img/Love-Coding.mp4', type='video/mp4')
-          | Your browser does not support the video tag. I suggest you upgrade your browser.
-          source(src='img/Love-Coding.webm', type='video/webm')
-          | Your browser does not support the video tag. I suggest you upgrade your browser.
-        .poster#bgPic
-          img(src='img/bg.png', alt='')
-
     // Navigation
     a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
       i.fa.fa-bars
@@ -53,8 +41,8 @@ block content
         p.lead I have been working as an AI developer for <a id="ebiLink" href="http://ebi.ai/">EBI Solutions</a> on all sorts of interesting AI projects. I've mainly been creating Facebook, Slack and web chat bots using <a href="https://www.ibm.com/watson/">IBM Watson</a>, but I've also created <a href="https://alexa.amazon.com/">Amazon Alexa</a> Skills and <a href="https://developer.microsoft.com/en-us/windows/kinect">Microsoft Kinect</a> applications using the <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=44561">Kinect SDK</a>.
           
     // Services
-    section#services.services.bg-primary.text-white
-      .services-container
+    section#services.services.bg-primary.text-white(data-stellar-background-ratio='0.5')
+        .services-container
         .row.text-center
           .col-lg-10.mx-auto
             h2 Cool stuff I've done
@@ -159,10 +147,13 @@ block content
     script(src='lib/typed.js')
     script(src='javascripts/jquery.textillate.js')
     script(src='javascripts/jquery.lettering.js')
+    script(src='javascripts/jquery-migrate-3.0.0.js')
+    script(src='javascripts/jquery.stellar.min.js')
     script.
 
       //jQuery is required to run this code
         $( document ).ready(function() {
+            $.stellar();
 
             var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
@@ -376,27 +367,6 @@ block content
                 },
                 "retina_detect": true
             });
-
-
-            /* ---- stats.js config ---- */
-
-            var count_particles, stats, update;
-            stats = new Stats;
-            stats.setMode(0);
-            stats.domElement.style.position = 'absolute';
-            stats.domElement.style.left = '0px';
-            stats.domElement.style.top = '0px';
-            document.body.appendChild(stats.domElement);
-            count_particles = document.querySelector('.js-count-particles');
-            update = function () {
-                stats.begin();
-                stats.end();
-                if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-                }
-                requestAnimationFrame(update);
-            };
-            requestAnimationFrame(update);
         })
 
           

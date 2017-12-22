@@ -23,6 +23,10 @@ body {
     vertical-align: middle;
 }
 
+section {
+    background-attachment: fixed;
+}
+
 #about a {
     display: inline;
     text-decoration: underline;
