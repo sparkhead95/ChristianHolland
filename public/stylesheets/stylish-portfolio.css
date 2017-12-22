@@ -36,7 +36,20 @@ body {
 }
 
 h1 {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Julius Sans One', sans-serif;
+    position: relative;
+}
+
+h2, h4{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #16181b;
 }
 
 #mainSubtitle {
@@ -80,6 +93,16 @@ h1 {
 
 .col-lg-10 {
     width: 100%
+}
+
+.text-vertical-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .text-vertical-center h1 {
@@ -300,7 +323,7 @@ hr.small {
 /* Header */
 
 .header {
-    position: absolute;
+    position: relative;
     display: table;
     width: 100%;
     height: 100%;
@@ -310,7 +333,6 @@ hr.small {
     background-size: cover;
     top: 0px;
     color: white;
-    z-index: 2;
 }
 
 
