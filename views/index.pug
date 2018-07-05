@@ -38,7 +38,10 @@ block content
           | I am a young Computer Science major developing Artificial Intelligence technologies during the day and web applications and computer games at night. If you check out my <a class="js-scroll-trigger" href="#services">portfolio</a>, you'll find I have a wide range of skills, along with something to show for each of one. Have a look around - if you like what you see and want to find out more, please drop me an <a class="js-scroll-trigger" href="#contact">email</a>.
         hr
         h2 What have I done since graduating?
-        p.lead I have been working as an AI developer for <a id="ebiLink" href="http://ebi.ai/">EBI Solutions</a> on all sorts of interesting AI projects. I've mainly been creating Facebook, Slack and web chat bots using <a href="https://www.ibm.com/watson/">IBM Watson</a>, but I've also created <a href="https://alexa.amazon.com/">Amazon Alexa</a> Skills and <a href="https://developer.microsoft.com/en-us/windows/kinect">Microsoft Kinect</a> applications using the <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=44561">Kinect SDK</a>.
+        p.lead I graduated from university and went straight into employment as an AI developer for <a id="ebiLink" href="http://ebi.ai/">EBI Solutions</a> on all sorts of interesting AI projects. I mainly created Facebook, Slack and web chat bot API's using <a href="https://www.ibm.com/watson/">IBM Watson</a>, but I also created <a href="https://alexa.amazon.com/">Amazon Alexa</a> Skills and <a href="https://developer.microsoft.com/en-us/windows/kinect">Microsoft Kinect</a> applications using the <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=44561">Kinect SDK</a>.
+        p.lead At the start of 2018, I began my travels across the east coast of Australia, broadening my experiences in as many ways possible. I worked as a manual labourer setting up events for <a href="https://www.nofusseventhire.com.au/">No Fuss Event Hire</a>, then moved on to door to door sales for <a href="https://www.thesmithfamily.com.au/">The Smith Family</a>; both within Melbourne over the period of 2 months. After I'd had my fill of Melbourne, I drove to the <a href="http://www.selxnsw.com.au/">SELX</a> cattle yards in Canberra. I worked long hard days for a month, then travelled the rest of the coast up to Cairns. I wanted to get a taste of what more physically demanding jobs were like, and can safely say I'm happy to stick with coding.
+          | Upon my return to the UK in July 2018, after a 6 month journey on the other side of the world, I am ready to buckle down and create my legacy through means of code.
+
           
     // Services
     section#services.services.bg-primary.text-white(data-stellar-background-ratio='0.5')
@@ -55,8 +58,8 @@ block content
                     i.fa.fa-cloud.fa-stack-1x.text-primary
                   h4
                     strong IBM Certified Engineer
-                  p During my Employment at IBM, I achieved a certification acknowledging that I am an IBM Certified Specialist Engineer.
-                  a.btn.btn-light(href='https://ibm.co/2nNygzu') Learn More
+                  p During my employment at IBM, I achieved a certification acknowledging that I am an IBM Certified Specialist Engineer. Unfortunately, IBM has some technical difficulties with my certification page, so here's a picture of it instead.
+                  a#certButton.btn.btn-light(href='../img/cert.jpg') Learn More
               .col-md-4
                 .service-item#si2
                   span.fa-stack.fa-4x
@@ -144,7 +147,6 @@ block content
     script(src='javascripts/stylish-portfolio.js')
     script(src='javascripts/buttons.js')
     script(src='javascripts/particles.js')
-    script(src='lib/typed.js')
     script(src='javascripts/jquery.textillate.js')
     script(src='javascripts/jquery.lettering.js')
     script(src='javascripts/jquery-migrate-3.0.0.js')
@@ -164,11 +166,6 @@ block content
                 $('.col-md-4').css('padding-right', '10%');
             }
 
-            //// Typewriter effects
-            //var typed = new Typed('#typed', {
-            //    stringsElement: '#typed-strings',
-            //    typeSpeed: 15
-            //});
 
             $('.tlt').textillate({
                 // the default selector to use when detecting multiple texts to animate
